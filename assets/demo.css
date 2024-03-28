@@ -1,53 +1,118 @@
-/****************  WEBSITE TEST *******************/
-
-.part_one {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  text-align: right;
+/************ F		O		N		T		S ****/
+@font-face {
+	font-family: 'Mosk, sans-serif';
+	src: url(fonts/Mosk\ Ultra-Bold\ 900.ttf);
+	font-weight: 900;
+	font-style: bold;
 }
-
+/****************  WEBSITE TEST *******************/
 body {
     background-color: rgb(0, 0, 0);
 }
-/****************  WEBSITE TEST *******************/
 
 
-header {
-  text-align: right;
+/****************  FOOT NOTES R. WALTER- Phrase *******************/
+
+.container00 {
+	margin: 0 auto;
+	width: 900px;
+	height: 1200px;
+	border: 2px dashed;
+	/* font-size: 0; */
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+	align-content: center;
+	.container__box {
+		padding: 5px;
+		display: inline-block;
+	}
+
+	.container__box--child00 {
+		background-color: rgb(0, 0, 0);
+		color:white;
+		font-size: 29px;
+		width: 430px;
+		height: 50px; 
+		font-family: 'Mosk, sans-serif';
+	}
+
+
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+/****************  FOOT NOTES R. WALTER. Contact data *******************/
+.container01 {
+	margin: 0 auto;
+	width: 900px;
+	height: 400px;
+	border: 2px dashed;
+	/* font-size: 0;   */
+	background-color: rgb(0, 0, 0);
+
+	.container__box {
+		padding: 5px;
+		display: inline-block;
+	}
+
+	.container__box--child1 {
+		align-content: center;
+		background-image: url(img/rwco.PNG);
+		background-position: center;
+	}
+
+	.container__box--child2 {
+		align-content: center;
+		background-image: url(img/imge.PNG);
+		background-position: center;
+	}
+	
+	.container__box--child3 {
+		background-image: url(img/leds_00.png);
+		background-color: salmon;
+	}
+
+	.container__box--child4 {
+		background-image: url(img/aztec_calendar_00.PNG);
+		display:flexbox;
+	}
+
+	.container__box--child5 {
+		background-image: url(img/leds_01.png);
+		background-color: yellow;
+	}
+
+	.container__box--child1,
+	.container__box--child2 {
+		border-top: 20px solid rgb(0, 0, 0);
+		border-bottom: 10px solid rgb(0, 0, 0);
+		width: 430px;
+		height: 50px; 
+	}
+
+	.container__box--child3,
+	.container__box--child4,
+	.container__box--child5 {
+		border-left: 10px solid rgb(0, 0, 0);
+		border-right:  10px solid rgb(0, 0, 0);
+		width: 260px;
+		height: 260px; 
+		
+	} 
+
+
 }
 
-h1 { font-size: 28px; }
-h2 { font-size: 22px; }
-
-/* @end */
-
-@media (max-width: 800px) {
-  body { padding: 0; }
-
-  .main-header {
-    position: relative;
-    width: 100%;
-  }
-
-.demo h2 {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 1em;
-}
-
-.demo .flipster {
-  margin: 0 -2em;
-}
-
-h3 {
-  font-size: 50px; 
-  text-align: left;
-  font-size: white;
+/************* E	M	P	T	Y			S	P	A	C	E************/
+.container02 {
+	margin: 0 auto;
+	width: 900px;
+	height: 100px;
+	border: 2px dashed;
+	/* font-size: 0;   */
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+	align-content: center;
+	.container__box {
+		padding: 5px;
+		display: inline-block;
+	}
 }

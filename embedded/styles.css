@@ -50,7 +50,7 @@ body {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 1rem;
-			flex: 2 0 250px;
+			flex: 2 1 250px;
 			.box_menu {
 				padding: 1rem;
 				border-radius: 1rem;
@@ -58,7 +58,7 @@ body {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				flex: 1 0 250px;
+				flex: 2 0 250px;
 				&:nth-child(1) {
 					background-color: #774360;
 				}

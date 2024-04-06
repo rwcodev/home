@@ -1,452 +1,593 @@
 <!DOCTYPE html>
-<!-- saved from url=(0050)https://portfolio-requisitos-basicos.netlify.app/# -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Rafael Walter Contreras Ortega">
-  <meta name="description" content="No más de 165 caracteres">
-  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
-  <meta name="theme-color" content="#09f">
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Walter" />
+		<meta name="description" content="No más de 165 caracteres" />
+		<meta
+			name="keywords"
+			content="full, stack, web, developer, embedded"
+		/>
+		<meta name="theme-color" content="#09f" />
+		<!-- Fuente  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Iconos  -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./assets/css/css2" rel="stylesheet">
+		<title>Portafolio</title>
 
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="icon" href="assets/img/logo.png" type="image/png" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="module" src="assets/js/main.js"></script>
+	</head>
 
-  <title>Portafolio</title>
+	<body>
+		<header class="header">
+			<nav class="navbar grid--container flex--container">
+				<a class="navbar__logo flex--container" href="#"
+					><i class="bx bxs-registered"></i>Rafa</a
+				>
 
-  <link rel="icon" href="https://portfolio-requisitos-basicos.netlify.app/assets/img/logo.png" type="image/png">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script type="module" src="./assets/js/main.js.download" defer=""></script>
-  <script type="text/javascript" src="./assets/js/email.min.js.download">
-  </script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: "eepJ3aozWvvDMEzPM",///VERIFICAR. Agregar boton p/compartir PORTFOLIO
-      });
-    })();
-  </script>
-</head>
+				<div id="nav" class="navbar__menu">
+					<a href="#close"
+						><i class="bx bx-x btn__close navbar__icon flex--container"></i
+					></a>
 
-<body>
-  <header class="header">
-    <nav class="navbar grid--container">
-      <a class="navbar__logo" href="index.html/#"><i class="bx bxs-registered"></i>Rafa</a>
+					<ul class="navbar__list flex--container">
+						<li class="navbar__item">
+							<a class="navbar__link active" href="#home">Home</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#about">About Me</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#skills">Skills</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#projects">Portfolio</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar__toggles flex--container">
+					<div class="navbar__toggle--darkmode flex--container">
+						<input
+							type="checkbox"
+							name="color-scheme"
+							id="darkmode-toggle"
+							class="navbar__toggle--darkmode-input"
+						/>
+						<label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+							<i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+							<i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+						</label>
+					</div>
+					<div class="navbar__toggle--language flex--container">
+						<input
+							type="checkbox"
+							id="language-toggle"
+							class="navbar__toggle--language-input"
+						/>
+						<label
+							for="language-toggle"
+							class="navbar__toggle--language-label"
+						></label>
+					</div>
+				</div>
+				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+			</nav>
+		</header>
 
-      <div id="nav" class="navbar__menu">
-        <a href="index.html/#close"><i class="bx bx-x btn__close navbar__icon"></i></a>
+		<main>
+			<section id="home" class="home">
+				<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+				<i
+					class="bx bxl-javascript home__layer home__layer--2"
+					data-speed="5"
+				></i>
+				<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+				<i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+				<i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+				<i
+					class="bx bxl-tailwind-css home__layer home__layer--6"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+				<i
+					class="bx bxl-typescript home__layer home__layer--8"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+				<i
+					class="bx bxl-graphql home__layer home__layer--10"
+					data-speed="-7"
+				></i>
+				<i
+					class="bx bx-code-alt home__layer home__layer--11"
+					data-speed="-5"
+				></i>
+				<div class="home__container grid--container">
+					<div class="home__image">
+						<img
+							src="assets/img/profile.png"
+							alt="profile photo"
+							title="Tu nombre"
+						/>
+					</div>
 
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a class="navbar__link active" href="#home">Start</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#about">About Me</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#skills">Skills</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#projects">Portfolio</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#contact">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-      <div class="navbar__toggles">
-        <div class="navbar__toggle--darkmode">
-          <input type="checkbox" id="darkmode-toggle" class="navbar__toggle--darkmode-input">
-          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
-            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
-            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
-          </label>
-        </div>
-        <div class="navbar__toggle--language">
-          <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input">
-          <label for="language-toggle" class="navbar__toggle--language-label">
-        </label></div>
-      </div>
-      <a href="./assets/img/bxs-moon.svg"><i class="bx bx-menu btn__open navbar__icon"></i></a>
-    </nav>
-  </header>
+					<ul class="home__social flex--container">
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bxl-whatsapp"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bxl-github"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bx-envelope"></i
+							></a>
+						</li>
+					</ul>
 
-  <main>
-    <section id="home" class="home">
-      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5" style="transform: translateX(26.1px) translateY(56.98px);"></i>
-      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5" style="transform: translateX(-6.6px) translateY(-37.92px);"></i>
-      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2" style="transform: translateX(3.21px) translateY(-9.45px);"></i>
-      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6" style="transform: translateX(-9.87px) translateY(-47.41px);"></i>
-      <i class="bx bxl-react home__layer home__layer--5" data-speed="8" style="transform: translateX(-16.41px) translateY(-66.39px);"></i>
-      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2" style="transform: translateX(16.29px) translateY(28.51px);"></i>
-      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4" style="transform: translateX(-3.33px) translateY(-28.43px);"></i>
-      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2" style="transform: translateX(16.29px) translateY(28.51px);"></i>
-      <i class="bx bxl-git home__layer home__layer--9" data-speed="6" style="transform: translateX(-9.87px) translateY(-47.41px);"></i>
-      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7" style="transform: translateX(32.64px) translateY(75.96px);"></i>
-      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5" style="transform: translateX(26.1px) translateY(56.98px);"></i>
-      <div class="home__container grid--container">
-        <div class="home__image">
-          <span></span>
-          <img src="./assets/img/profile.png" alt="profile photo">
-        </div>
+					<div class="home__info">
+						<h1 class="home__title">Hey, soy Goku</h1>
 
-        <ul class="home__social">
-          <li class="home__social-item">
-            <a class="home__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bxl-linkedin"></i></a>
-          </li>
-          <li class="home__social-item">
-            <a class="home__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bxl-whatsapp"></i></a>
-          </li>
-          <li class="home__social-item">
-            <a class="home__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bxl-github"></i></a>
-          </li>
-          <li class="home__social-item">
-            <a class="home__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bx-envelope"></i></a>
-          </li>
-        </ul>
+						<p class="home__description">
+							I like to build stuff, amazing stuff at best.
+						</p>
+					</div>
 
-        <div class="home__info">
+					<div class="home__buttons">
+						<a
+							class="btn btn--primary"
+							href=""
+							title="Descargar mi CV"
+							download="my_cv"
+							rel="noreferrer nofollow"
+						>
+							Descargar CV
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="about section">
+				<h2 class="section__title">About Me</h2>
 
-          <h1 class="home__title">Hi, I'm Walter</h1>
+				<div class="about__container grid--container">
+					<p class="about__description">
+						Full stack web developer, as a part of a team 
+						on your enterprise or alone, i can turn the ideas into something 
+						tangible thanks to my background in engineering.
+					</p>
 
-          <p class="home__description">
-            I like to build stuff, amazing stuff at best.
-          </p>
-        </div>
+					<div class="about__cards flex--container">
+						<!--Card 1 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/me_1.jpg"
+								alt="Laborando como ingeniero"
+								title="Laborando como ingeniero"
+							/>
+						</div>
+						<!--Card 2 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/me_2.jpg"
+								alt="Laborando como diseñador"
+								title="Laborando como diseñador"
+							/>
+						</div>
+						<!--Card 3 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/me_3.jpg"
+								alt="Trabajando en equipo"
+								title="rabajando en equipo"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="skills" class="skills section">
+				<h2 class="section__title">Skills</h2>
 
-        <div class="home__buttons">
-          <button class="btn btn--primary" type="button"download="CV-FULL STACK-RWCO">Download CV</button>
-        </div>
-      </div>
+				<div class="skills__container grid--container">
+					<p class="skills__description flex--container">
+						For me it is very important to stay up to date on the 
+						latest technologies in web development as well as take 
+						into account hardcore security on your website.
+					</p>
 
-    </section>
+					<div class="skills__wrapper flex--container">
+						<div class="skills__cards flex--container">
+							<!--Card 1 -->
+							<details class="skills__cards-container" name="moreInfo" open>
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-html5 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">HTML</h3>
 
-    <section id="about" class="about section">
-      <h2 class="section__title">About Me</h2>
+									<p class="skills__card-description">
+										It is the standard that prevails 
+                  						in the display of web pages and is adopted by all current browsers.!
+									</p>
+								</div>
+							</details>
+							<!--Card 2 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-css3 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">CSS3</h3>
 
-      <div class="about__container grid--container">
-        <p class="about__description">
-          Full stack web developer, as a part of a bigger team 
-          on your enterprise or alone, i can turn the ideas into something 
-          tangible thanks to my background in engineering.
-        </p>
+									<p class="skills__card-description">
+										CSS could be defined as a type of language that allows defining and creating 
+                   						the visual presentation of a document already structured and written in a 
+                   						markup language such as HTML..
+									</p>
+								</div>
+							</details>
+							<!--Card 3 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-javascript flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Javascript</h3>
 
-        <div class="about__cards">
-          <!--Card 1 -->
-          <div class="about__card">
-            <img class="about__card--img" src="./assets/img/me_1.jpg" alt="Laborando como ingeniero">
-          </div>
-          <!--Card 2 -->
-          <div class="about__card">
-            <img class="about__card--img" src="./assets/img/me_2.jpg" alt="Laborando como diseñador">
-          </div>
-          <!--Card 3 -->
-          <div class="about__card">
-            <img class="about__card--img" src="./assets/img/me_3.jpg" alt="Trabajando en equipo">
-          </div>
-        </div>
+									<p class="skills__card-description">
+										It is mainly used client-side, implemented as part of a web browser allowing 
+                   						for improvements in the user interface and dynamic web pages3​ and server-side 
+                   						JavaScript.
+									</p>
+								</div>
+							</details>
+							<!--Card 4 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-react flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">React</h3>
 
-      </div>
-    </section>
-    <section id="skills" class="skills section">
-      <h2 class="section__title">Skills</h2>
+									<p class="skills__card-description">
+										React (also called React.js or ReactJS) is an open source Javascript
+                     					library designed to create user interfaces to facilitate the development
+                     					of single-page applications..
+									</p>
+								</div>
+							</details>
+						</div>
+					</div>
+					<div class="skills__tags flex--container">
+						<h3 class="skills__tags-title">Softs Skills</h3>
+						<div class="skills__tags-container flex--container">
+							<span class="skills__tag">Responsible</span>
+							<span class="skills__tag">Team work</span>
+							<span class="skills__tag">Creative</span>
+							<span class="skills__tag">Discipline</span>
+							<span class="skills__tag">Proactive</span>
+							<span class="skills__tag">Determination</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="projects" class="projects section">
+				<h2 class="section__title">Projects</h2>
 
-      <div class="skills__container grid--container">
-        <p class="skills__description">
-          For me it is very important to stay up to date on the 
-          latest technologies in web development as well as take 
-          into account hardcore security on your website.
-        </p>
+				<div class="projects__container grid--container">
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project1.jpg"
+									alt="project 1"
+									title="Ecommerce Vanilla"
+								/>
+							</div>
 
-        <div class="skills__wrapper">
-          <div class="skills__cards">
-            <!--Card 1 -->
-            <input type="radio" name="slide" id="c1" checked="" class="skills__input">
-            <label for="c1" class="skills__card">
-              <div class="skills__card-row">
-                <i class="bx bxl-html5"></i>
-                <div class="skills__description">
-                  <h3 class="skills__card-title">HTML</h3>
-                  <p>It is the standard that prevails 
-                    in the display of web pages and is adopted by all current browsers.!</p>
-                </div>
-              </div>
-            </label>
-            <!--Card 2 -->
-            <input type="radio" name="slide" id="c2" checked="" class="skills__input">
-            <label for="c2" class="skills__card">
-              <div class="skills__card-row">
-                <i class="bx bxl-css3"></i>
-                <div class="skills__description">
-                  <h3 class="skills__card-title">CSS3</h3>
-                  <p>CSS could be defined as a type of language that allows defining and creating 
-                    the visual presentation of a document already structured and written in a 
-                    markup language such as HTML.</p>
-                </div>
-              </div>
-            </label>
-            <!--Card 3 -->
-            <input type="radio" name="slide" id="c3" checked="" class="skills__input">
-            <label for="c3" class="skills__card">
-              <div class="skills__card-row">
-                <i class="bx bxl-javascript"></i>
-                <div class="skills__description">
-                  <h3 class="skills__card-title">Javascript</h3>
-                  <p>It is mainly used client-side, implemented as part of a web browser allowing 
-                    for improvements in the user interface and dynamic web pages3​ and server-side 
-                    JavaScript.</p>
-                </div>
-              </div>
-            </label>
-            <!--Card 4 -->
-            <input type="radio" name="slide" id="c4" checked="" class="skills__input">
-            <label for="c4" class="skills__card">
-              <div class="skills__card-row">
-                <i class="bx bxl-react"></i>
-                <div class="skills__description">
-                  <h3 class="skills__card-title">React</h3>
-                  <p>React (also called React.js or ReactJS) is an open source Javascript
-                     library designed to create user interfaces to facilitate the development
-                     of single-page applications..</p>
-                </div>
-              </div>
-            </label>
-          </div>
-        </div>
-        <div class="skills__tags">
-          <h3 class="skills__tags-title">Softs Skills</h3>
-          <div class="skills__tags-container">
-            <span class="skills__tag">Responsible</span>
-            <span class="skills__tag">Team work</span>
-            <span class="skills__tag">Creative</span>
-            <span class="skills__tag">Discipline</span>
-            <span class="skills__tag">Proactive</span>
-            <span class="skills__tag">Determination</span>
-          </div>
-        </div>
-      </div>
-      
-    </section>
+							<div class="projects__info">
+								<h3 class="projects__name">Project 1</h3>
+								<p class="projects__description">
+									Website for carbon capture trought token creation. Competing on XPRIZE Carbon Removal.
+								</p>
 
-    <section id="projects" class="projects section">
-      <h2 class="section__title">Projects</h2>
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										WATCH DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
-      <div class="projects__container grid--container">
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="./assets/img/project1.jpg" alt="project 1">
-            </div>
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project2.jpg"
+									alt="project 1"
+									title="Consumiendo API Pokemon con React"
+								/>
+							</div>
 
-            <div class="projects__info">
-              <h3 class="projects__name">Proyecto 1</h3>
-              <p class="projects__description">
-                Website for carbon capture trought token creation. Competing on XPRIZE Carbon Removal.
-              </p>
+							<div class="projects__info">
+								<h3 class="projects__name">Project 2</h3>
+								<p class="projects__description">
+									My other portfolio.
+								</p>
 
-              <div class="projects__buttons" > <!--<a href="https://youtu.be/o1igrwC8Ci8"></ahref>-->
-                <button class="btn projects__button" type="button">
-                    WATCH DEMO
-                </button>
-                <button class="btn projects__button" type="button">
-                  SEE CODE
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										WATCH DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="./assets/img/project2.jpg" alt="project 1">
-            </div>
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project3.jpg"
+									alt="project 1"
+									title="CRUD con React"
+								/>
+							</div>
 
-            <div class="projects__info">
-              <h3 class="projects__name">Proyect 2</h3>
-              <p class="projects__description">
-                My other portfolio.
-              </p>
+							<div class="projects__info">
+								<h3 class="projects__name">Project 3</h3>
+								<p class="projects__description">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								</p>
 
-              <div class="projects__buttons">
-                <button class="btn projects__button" type="button"><!--<a href="https://youtu.be/o1igrwC8Ci8"></ahref>-->
-                  WATCH DEMO
-                </button>
-                <button class="btn projects__button" type="button">
-                  SEE CODE
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										WATCH DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="./assets/img/project4.jpg" alt="project 1">
-            </div>
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project4.jpg"
+									alt="project 1"
+									title="Aplicación del tiempo con React"
+								/>
+							</div>
 
-            <div class="projects__info">
-              <h3 class="projects__name">Proyect 3</h3>
-              <p class="projects__description">
-                My blog.
-              </p>
+							<div class="projects__info">
+								<h3 class="projects__name">Project 4</h3>
+								<p class="projects__description">
+									The next big thing ... Who knows!.
+								</p>
 
-              <div class="projects__buttons">
-                <button class="btn projects__button" type="button"><!--<a href="https://youtu.be/o1igrwC8Ci8"></ahref>-->
-                  WATCH DEMO
-                </button>
-                <button class="btn projects__button" type="button">
-                  SEE CODE
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										WATCH DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="contact section">
+				<h2 class="section__title">Contact</h2>
 
-        <div class="projects__project">
-          <div class="projects__inner grid--container">
-            <div class="projects__image">
-              <img src="./assets/img/project5.jpg" alt="project 1">
-            </div>
+				<div class="contact__container grid--container">
+					<div class="contact__info">
+						<h3 class="contact__info-title">Contact Information</h3>
+						<p class="contact__info-description">
+							Let's talk about your ideas...
+						</p>
 
-            <div class="projects__info">
-              <h3 class="projects__name">Proyect 4</h3>
-              <p class="projects__description">
-                The next big thing ... Who knows!.
-              </p>
+						<address class="contact__info-data">
+							<div class="contact__info-item">
+								<i class="bx bxl-whatsapp"></i>
 
-              <div class="projects__buttons">
-                <button class="btn projects__button" type="button">
-                  WATCH DEMO
-                </button>
-                <button class="btn projects__button" type="button">
-                  SEE CODE
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+								<span class="contact__info-number">
+									<a
+										href="https://wa.me/0000000000000?text=Tu%20Mensaje%20De%20Texto"
+										target="_blank"
+										rel="noreferrer nofollow"
+										>Send message By WhatsApp</a
+									>
+								</span>
+							</div>
 
-    <section id="contact" class="contact section">
-      <h2 class="section__title">Contact</h2>
+							<div class="contact__info-item">
+								<i class="bx bx-phone"></i>
 
-      <div class="contact__container grid--container">
-        <div class="contact__info">
-          <h3 class="contact__info-title">Contact Information</h3>
-          <p class="contact__info-description">
-            Let's talk about your ideas..
-          </p>
+								<span class="contact__info-number">
+									<a
+										href="tel:1-234-567-8910"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										+1 123 456 7890
+									</a>
+								</span>
+							</div>
 
-          <address class="contatc__info-data">
-            <div class="contact__info-item">
-              <i class="bx bxl-whatsapp"></i>
+							<div class="contact__info-item">
+								<i class="bx bxs-envelope"></i>
 
-              <span class="contact__info-number">
-                <a href="https://wa.me/0000000000000?text=Tu%20Mensaje%20De%20Texto" target="_blank">Send message By
-                  WhatsApp</a>
-              </span>
-            </div>
+								<span class="contact__info-mail">
+									<a
+										id="mail"
+										href="mailto:test@correo.com"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										walcorg@gmail.com
+									</a>
+								</span>
+							</div>
 
-            <div class="contact__info-item">
-              <i class="bx bx-phone"></i>
+							<div class="contact__info-item">
+								<i class="bx bx-map"></i>
 
-              <span class="contact__info-number">
-                <a href="tel:1-234-567-8910"> +1 123 456 7890 </a>
-              </span>
-            </div>
+								<span class="contact__info-map"> Oaxaca, México. </span>
+							</div>
+						</address>
+					</div>
+					<div class="contact__form">
+						<h3 class="contact__form-title">Send message</h3>
+						<form id="form" class="contact__form-container">
+							<div class="contact__form-group">
+								<label for="name" class="contact__form-label">Name</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="contact__form-input"
+								/>
+							</div>
 
-            <div class="contact__info-item">
-              <i class="bx bxs-envelope"></i>
+							<div class="contact__form-group">
+								<label for="email" class="contact__form-label">E-mail</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="contact__form-input"
+								/>
+							</div>
 
-              <span class="contact__info-mail">
-                <a id="mail" href="mailto:test@correo.com"> walcorg@gmail.com </a>
-              </span>
-            </div>
+							<div class="contact__form-group">
+								<label for="subject" class="contact__form-label">Matter</label>
+								<input
+									type="text"
+									id="subject"
+									name="subject"
+									class="contact__form-input"
+								/>
+							</div>
 
-            <div class="contact__info-item">
-              <i class="bx bx-map"></i>
+							<div class="contact__form-group">
+								<label for="message" class="contact__form-label">Message</label>
+								<textarea
+									id="message"
+									name="message"
+									cols="30"
+									rows="10"
+									class="contact__form-input"
+								></textarea>
+							</div>
+							<dialog id="modal">
+								Query sent successfully!
+								<button type="reset" id="btn_close-modal">Cerrar</button>
+							</dialog>
 
-              <span class="contact__info-map"> Oaxaca, Mexico. </span>
-            </div>
-          </address>
-        </div>
+							<button type="submit" class="btn contact__form-button">
+								Send
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer section">
+			<div class="footer__container grid--container">
+				<div class="footer__info">
+					<h3 class="footer__title">R. Walter</h3>
+					<p class="footer__description">
+						Engineer that seek to solve problems with a software-based approach.
+					</p>
+				</div>
 
-        <div class="contact__form">
-          <h3 class="contact__form-title">Send Message</h3>
+				<div class="footer__social">
+					<h3 class="footer__title">Social Networks</h3>
 
-          <form id="form" class="contact__form-container">
-            <div class="contact__form-group">
-              <label for="name" class="contact__form-label">Name</label>
-              <input type="text" id="name" name="name" class="contact__form-input">
-            </div>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="#"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-facebook"></i
+							></a>
+						</li>
 
-            <div class="contact__form-group">
-              <label for="email" class="contact__form-label">E-mail</label>
-              <input type="email" id="email" name="email" class="contact__form-input">
-            </div>
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="#"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-instagram"></i
+							></a>
+						</li>
 
-            <div class="contact__form-group">
-              <label for="subject" class="contact__form-label">Matter</label>
-              <input type="text" id="subject" name="subject" class="contact__form-input">
-            </div>
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="#"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-twitter"></i
+							></a>
+						</li>
 
-            <div class="contact__form-group">
-              <label for="message" class="contact__form-label">Message</label>
-              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
-            </div>
-            <dialog id="modal">
-              Query sent successfully!
-              <button type="reset" id="btn_close-modal">Close</button>
-            </dialog>
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="#"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-            <button type="submit" class="btn contact__form-button">
-              Send
-            </button>
-
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer section">
-    <div class="footer__container grid--container">
-      <div class="footer__info">
-        <h3 class="footer__title">R. Walter</h3>
-        <p class="footer__description">
-          Engineer that seek to solve problems with a software-based approach.
-        </p>
-      </div>
-
-      <div class="footer__social">
-        <h3 class="footer__title">Social Network</h3>
-
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bxl-facebook"></i></a>
-          </li>
-
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bxl-instagram"></i></a>
-          </li>
-
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bxl-twitter"></i></a>
-          </li>
-
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://portfolio-requisitos-basicos.netlify.app/#"><i class="bx bxl-linkedin"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="footer__copy">© 2024, Powered By An ACADEMLO Student</p>
-  </footer>
-</body></html>
+			<p class="footer__copy">© 2024, Powered By An ACADEMLO Studddent</p>
+		</footer>
+	</body>
+</html>

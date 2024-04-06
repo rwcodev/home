@@ -607,6 +607,7 @@ html {
 			.projects__info {
 				padding: 1rem;
 				.projects__buttons {
+          a { color: red; } /* CSS link color */
 					display: flex;
 					flex-wrap: wrap;
 					gap: 1rem;

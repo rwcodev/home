@@ -24,40 +24,45 @@
 			rel="stylesheet"
 		/>
 
-		<title>Portafolio</title>
+		<title>Portfolio</title>
 
 		<link rel="icon" href="assets/img/logo.png" type="image/png" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<script type="module" src="assets/js/main.js"></script>
+		<script src="language.js"></script> <!-- Doesn´t work if you put this file in another folder  -->
+
 	</head>
 
 	<body>
 		<header class="header">
 			<nav class="navbar grid--container flex--container">
-				<a class="navbar__logo flex--container" href="#"
-					><i class="bx bx-laptop"></i>walcorg</a
-				>
+				<a class="navbar__logo flex--container" href="#">
+					<i class="bx bx-laptop"></i>
+					<p id="text_000">walcorg</p>
+				</a>
 
-				<div id="nav" class="navbar__menu">
+
+				
+					<div id="nav" class="navbar__menu">
 					<a href="#close"
 						><i class="bx bx-x btn__close navbar__icon flex--container"></i
 					></a>
 
 					<ul class="navbar__list flex--container">
 						<li class="navbar__item">
-							<a class="navbar__link active" href="#home">Home</a>
+							<a class="navbar__link active" href="#home"><p id="text_001">Home</p></a>
 						</li>
 						<li class="navbar__item">
-							<a class="navbar__link" href="#about">About Me</a>
+							<a class="navbar__link" href="#about"><p id="text_002">About Me</p></a>
 						</li>
 						<li class="navbar__item">
-							<a class="navbar__link" href="#skills">Skills</a>
+							<a class="navbar__link" href="#skills"><p id="text_003">Skills</p></a>
 						</li>
 						<li class="navbar__item">
-							<a class="navbar__link" href="#projects">Portfolio</a>
+							<a class="navbar__link" href="#projects"><p id="text_004">Portfolio</p></a>
 						</li>
 						<li class="navbar__item">
-							<a class="navbar__link" href="#contact">Contact</a>
+							<a class="navbar__link" href="#contact"><p id="text_005">Contact</p></a>
 						</li>
 					</ul>
 				</div>
@@ -78,14 +83,18 @@
 						<input
 							type="checkbox"
 							id="language-toggle"
-							class="navbar__toggle--language-input"
-						/>
+							onclick="myFunction()"
+							class="navbar__toggle--language-input">
+
 						<label
 							for="language-toggle"
 							class="navbar__toggle--language-label"
 						></label>
 					</div>
 				</div>
+
+
+
 				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
 			</nav>
 		</header>
@@ -126,7 +135,6 @@
 							title="Tu nombre"
 						/>
 					</div>
-
 					<ul class="home__social flex--container">
 						<li class="home__social-item">
 							<a class="home__social-link" href="#" target="_blank"
@@ -151,10 +159,11 @@
 					</ul>
 
 					<div class="home__info">
-						<h1 class="home__title">Hey, soy Goku</h1>
+						<h1 class="home__title"><p id="text_006">Hi, I´m Walter</p></h1>
 
 						<p class="home__description">
-							I like to build stuff, amazing stuff at best.
+							<p id="text_007">I like to build stuff, amazing stuff at best.</p>
+
 						</p>
 					</div>
 
@@ -165,20 +174,19 @@
 							title="Descargar mi CV"
 							download="my_cv"
 							rel="noreferrer nofollow"
-						>
-							Download CV
-						</a>
+						><p id="text_008">Download CV</p></a>
 					</div>
 				</div>
 			</section>
 			<section id="about" class="about section">
-				<h2 class="section__title">About Me</h2>
+				<h2 class="section__title"><p id="text_009">About Me</p></h2>
 
 				<div class="about__container grid--container">
 					<p class="about__description">
-						Full stack web developer, as a part of a team 
-						on your enterprise or alone, i can turn the ideas into something 
-						tangible thanks to my background in engineering.
+						<p id="text_010">Full stack web developer, as a part of a team 
+							on your enterprise or alone, i can turn the ideas into something 
+							tangible thanks to my background in engineering.</p>
+						
 					</p>
 
 					<div class="about__cards flex--container">
@@ -213,13 +221,13 @@
 				</div>
 			</section>
 			<section id="skills" class="skills section">
-				<h2 class="section__title">Skills</h2>
+				<h2 class="section__title"><p id="text_011">Skills</p></h2>
 
 				<div class="skills__container grid--container">
 					<p class="skills__description flex--container">
-						For me it is very important to stay up to date on the 
-						latest technologies in web development as well as take 
-						into account hardcore security on your website.
+						<p id="text_012">To me it's very important to stay up to date on the 
+							latest technologies in web development as well as take 
+							into account hardcore security on your website.</p>						
 					</p>
 
 					<div class="skills__wrapper flex--container">
@@ -233,8 +241,9 @@
 									<h3 class="skills__card-title">HTML</h3>
 
 									<p class="skills__card-description">
-										It is the standard that prevails 
-                  						in the display of web pages and is adopted by all current browsers.!
+										<p id="text_013">It is the standard that prevails 
+											in the display of web pages and is adopted by all current browsers.!</p>
+										
 									</p>
 								</div>
 							</details>
@@ -247,9 +256,10 @@
 									<h3 class="skills__card-title">CSS3</h3>
 
 									<p class="skills__card-description">
-										CSS could be defined as a type of language that allows defining and creating 
-                   						the visual presentation of a document already structured and written in a 
-                   						markup language such as HTML..
+										<p id="text_014">CSS could be defined as a type of language that allows defining and creating 
+											the visual presentation of a document already structured and written in a 
+											markup language such as HTML..</p>
+										
 									</p>
 								</div>
 							</details>
@@ -262,9 +272,10 @@
 									<h3 class="skills__card-title">Javascript</h3>
 
 									<p class="skills__card-description">
-										It is mainly used client-side, implemented as part of a web browser allowing 
-                   						for improvements in the user interface and dynamic web pages3​ and server-side 
-                   						JavaScript.
+										<p id="text_015">It is mainly used client-side, implemented as part of a web browser allowing 
+											for improvements in the user interface and dynamic web pages3​ and server-side 
+											JavaScript.</p>
+
 									</p>
 								</div>
 							</details>
@@ -277,29 +288,30 @@
 									<h3 class="skills__card-title">React</h3>
 
 									<p class="skills__card-description">
-										React (also called React.js or ReactJS) is an open source Javascript
-                     					library designed to create user interfaces to facilitate the development
-                     					of single-page applications..
-									</p>
+										<p id="text_016">React (also called React.js or ReactJS) is an open source Javascript
+											library designed to create user interfaces to facilitate the development
+											of single-page applications..
+									   </p></p>
+
 								</div>
 							</details>
 						</div>
 					</div>
 					<div class="skills__tags flex--container">
-						<h3 class="skills__tags-title">Softs Skills</h3>
+						<h3 class="skills__tags-title"><p id="text_017">Softs Skills</p></h3>
 						<div class="skills__tags-container flex--container">
-							<span class="skills__tag">Responsible</span>
-							<span class="skills__tag">Team work</span>
-							<span class="skills__tag">Creative</span>
-							<span class="skills__tag">Discipline</span>
-							<span class="skills__tag">Proactive</span>
-							<span class="skills__tag">Determination</span>
+							<span class="skills__tag"><p id="text_018">Responsible</p></span>
+							<span class="skills__tag"><p id="text_019">Team work</p></span>
+							<span class="skills__tag"><p id="text_020">Creative</p></span>
+							<span class="skills__tag"><p id="text_021">Discipline</p></span>
+							<span class="skills__tag"><p id="text_022">Proactive</p></span>
+							<span class="skills__tag"><p id="text_023">Determination</p></span>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section id="projects" class="projects section">
-				<h2 class="section__title">Projects</h2>
+				<h2 class="section__title"><p id="text_024">Projects</p></h2>
 
 				<div class="projects__container grid--container">
 					<div class="projects__project">
@@ -308,26 +320,27 @@
 								<img
 									src="assets/img/project1.jpg"
 									alt="project 1"
-									title="Ecommerce Vanilla"
+									title="walcorg"
 								/>
 							</div>
 
 							<div class="projects__info">
-								<h3 class="projects__name">Project 1</h3>
+								<h3 class="projects__name"><p id="text_025">Project 1</p></h3>
 								<p class="projects__description">
-									Carbon capture trought token creation & Hardware Design. 
-                <p>Competing on XPRIZE® Carbon Removal.</p>
+									<p id="text_026">Carbon capture trought token creation & Hardware Design.</p>
+									 
+									<p id="text_027">Competing on XPRIZE® Carbon Removal.</p>
 								</p>
 
 								<div class="projects__buttons">
 									<button class="btn projects__button" type="button">
 
 
-                  <a href="http://www.walcorg.com">WATCH DEMO</a>
+                  <a href="http://www.walcorg.com"><p id="text_028">WATCH DEMO</p></a>
                   
 									</button>
 									<button class="btn projects__button" type="button">
-										SEE CODE
+										<p id="text_029">SEE CODE</p>
 									</button>
 								</div>
 							</div>
@@ -345,14 +358,14 @@
 							</div>
 
 							<div class="projects__info">
-								<h3 class="projects__name">Project 2</h3>
+								<h3 class="projects__name"><p id="text_030">Project 2</p></h3>
 								<p class="projects__description">
-									My other portfolio.
+									<p id="text_031">My other portfolio.</p>
 								</p>
 
 								<div class="projects__buttons">
 									<button class="btn projects__button" type="button">
-                  <a href='/portfolio/portfolio.html' >WATCH DEMO</a>
+                  <a href='/portfolio/portfolio.html' ><p id="text_032">WATCH DEMO</p></a>
 									</button>
 									<button class="btn projects__button" type="button">
 										SEE CODE
@@ -373,17 +386,17 @@
 							</div>
 
 							<div class="projects__info">
-								<h3 class="projects__name">Project 3</h3>
+								<h3 class="projects__name"><p id="text_033">Project 3</p></h3>
 								<p class="projects__description">
-									My blog.
+									<p id="text_034">My blog</p>
 								</p>
 
 								<div class="projects__buttons">
 									<button class="btn projects__button" type="button">
-                  <a href='/blog/about_the_author.html' >WATCH DEMO</a>
+                  <a href='/blog/about_the_author.html' ><p id="text_035">WATCH DEMO</p></a>
 									</button>
 									<button class="btn projects__button" type="button">
-										SEE CODE
+										<p id="text_036">SEE CODE</p>
 									</button>
 								</div>
 							</div>
@@ -401,17 +414,17 @@
 							</div>
 
 							<div class="projects__info">
-								<h3 class="projects__name">Project 4</h3>
+								<h3 class="projects__name"><p id="text_037">Project 4</p></h3>
 								<p class="projects__description">
-									The next big thing ... Who knows!.
+									<p id="text_038">The next big thing ... Who knows!</p>
 								</p>
 
 								<div class="projects__buttons">
 									<button class="btn projects__button" type="button">
-                  <a href='/hardware/hardware_000.html' >WATCH DEMO</a>
+                  <a href='/hardware/hardware_000.html' ><p id="text_039">WATCH DEMO</p></a>
 									</button>
 									<button class="btn projects__button" type="button">
-										SEE CODE
+										<p id="text_040">SEE CODE</p>
 									</button>
 								</div>
 							</div>
@@ -420,13 +433,13 @@
 				</div>
 			</section>
 			<section id="contact" class="contact section">
-				<h2 class="section__title">Contact</h2>
+				<h2 class="section__title"><p id="text_041">Contact</p></h2>
 
 				<div class="contact__container grid--container">
 					<div class="contact__info">
-						<h3 class="contact__info-title">Contact Information</h3>
+						<h3 class="contact__info-title"><p id="text_042">Contact Information</p></h3>
 						<p class="contact__info-description">
-							Let's talk about your ideas...
+							<p id="text_043">Let's talk about your ideas...</p>
 						</p>
 
 						<address class="contact__info-data">
@@ -438,7 +451,7 @@
 										href="https://wa.me/0000000000000?text=Tu%20Mensaje%20De%20Texto"
 										target="_blank"
 										rel="noreferrer nofollow"
-										>Send message By WhatsApp</a
+										><p id="text_044">Send message By WhatsApp</p></a
 									>
 								</span>
 							</div>
@@ -480,10 +493,10 @@
 						</address>
 					</div>
 					<div class="contact__form">
-						<h3 class="contact__form-title">Send message</h3>
+						<h3 class="contact__form-title"><p id="text_045">Send message</p></h3>
 						<form id="form" class="contact__form-container">
 							<div class="contact__form-group">
-								<label for="name" class="contact__form-label">Name</label>
+								<label for="name" class="contact__form-label"><p id="text_046">Name</p></label>
 								<input
 									type="text"
 									id="name"
@@ -493,7 +506,7 @@
 							</div>
 
 							<div class="contact__form-group">
-								<label for="email" class="contact__form-label">E-mail</label>
+								<label for="email" class="contact__form-label"><p id="text_047">E-mail</p></label>
 								<input
 									type="email"
 									id="email"
@@ -503,7 +516,7 @@
 							</div>
 
 							<div class="contact__form-group">
-								<label for="subject" class="contact__form-label">Matter</label>
+								<label for="subject" class="contact__form-label"><p id="text_048">Affair</p></label>
 								<input
 									type="text"
 									id="subject"
@@ -513,7 +526,7 @@
 							</div>
 
 							<div class="contact__form-group">
-								<label for="message" class="contact__form-label">Message</label>
+								<label for="message" class="contact__form-label"><p id="text_049">Message</p></label>
 								<textarea
 									id="message"
 									name="message"
@@ -523,12 +536,12 @@
 								></textarea>
 							</div>
 							<dialog id="modal">
-								Query sent successfully!
-								<button type="reset" id="btn_close-modal">Cerrar</button>
+								<p id="text_050">Query sent successfully!</p>
+								<button type="reset" id="btn_close-modal"><p id="text_051">Close</p></button>
 							</dialog>
 
 							<button type="submit" class="btn contact__form-button">
-								Send
+								<p id="text_052">Send</p>
 							</button>
 						</form>
 					</div>
@@ -540,12 +553,12 @@
 				<div class="footer__info">
 					<h3 class="footer__title">R. Walter</h3>
 					<p class="footer__description">
-						Engineer that seek to solve problems with a software-based approach.
+						<p id="text_053">Engineer that seek to solve problems with a software-based approach.</p>
 					</p>
 				</div>
 
 				<div class="footer__social">
-					<h3 class="footer__title">Social Networks</h3>
+					<h3 class="footer__title"><p id="text_054">Social Networks</p></h3>
 
 					<ul class="footer__social-list">
 						<li class="footer__social-item">
@@ -591,7 +604,7 @@
 				</div>
 			</div>
 
-			<p class="footer__copy">© 2024, Powered By An ACADEMLO Studddent</p>
+			<p class="footer__copy"><p id="text_055">© 2024, Powered By An ACADEMLO® Studddent</p></p>
 		</footer>
 	</body>
 </html>

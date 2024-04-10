@@ -1,0 +1,80 @@
+/*** Tipos de selectores ***/
+
+/*** Selector universal ***/
+*{
+   font-size: 20px; **/
+}
+
+/* Selector de tipo */
+body {
+    background-color:rgb(17, 17, 17);
+    color:rgb(189, 191, 195)
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.barra{
+    width: 70%;
+    height: 200px;
+    position: absolute;
+    right: 15;
+    bottom: 35;
+   
+    background-color: gray;
+    z-index: -1;
+}
+
+.contenedor-imagen {
+   
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+  }
+  .contenedor-imagen img {
+    max-width: 100%;
+    border: 100px solid transparent; 
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

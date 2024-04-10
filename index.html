@@ -29,10 +29,20 @@
 		<link rel="icon" href="assets/img/logo.png" type="image/png" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<script type="module" src="assets/js/main.js"></script>
-		<script src="language.js"></script> <!-- Doesn´t work if you put this file in another folder  -->
+		<!-- //////////////////// Script for QUERY RESPONSE ////////////////////  -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+		<script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "4gSeXtdZGg1lIQAsQ",
+            });
+        })();
+		</script>
+		<!-- ///////////////////////////////////////////////////////////////////  -->
 
+		<script src="language.js"></script> <!-- Doesn´t work if you put this file in another folder/level  -->
 	</head>
-
 	<body>
 		<header class="header">
 			<nav class="navbar grid--container flex--container">
@@ -40,8 +50,6 @@
 					<i class="bx bx-laptop"></i>
 					<p id="text_000">walcorg</p>
 				</a>
-
-
 				
 					<div id="nav" class="navbar__menu">
 					<a href="#close"

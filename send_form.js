@@ -27,7 +27,7 @@ function sendEmail(e) {
 	}
 }
 
-closeButton.addEventListener('text_052', closeModal);
+closeButton.addEventListener('click', closeModal);
 formulario.addEventListener('submit', sendEmail);
 
 export default sendEmail;

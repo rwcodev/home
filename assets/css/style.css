@@ -638,7 +638,7 @@ html {
 /* ============= Contact ============= */
 .contact {
 	background-color: var(--bg-color-section1);
-	background-image: url(../img/test.jpg);
+	background-image: url(../img/test00.jpg);
 	.contact__container {
 		gap: 2rem;
 		.contact__info {
@@ -657,14 +657,16 @@ html {
 			background-color: var(--bg-color-section2);
 			border-radius: 5px;
 			margin: 0 auto; */
+			text-align: center;
 
+			
 			background: linear-gradient(135deg ,rgba(255, 255, 255, 0.1), rgba(225, 255, 255, 0));
 			backdrop-filter: blur(10px);
 			-webkit-backdrop-filter: blur(10px);
 			border-radius:  20px;
 			border: 1px solid rgba(255, 255, 255, 0.18);
 			box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
+			padding: 15px;
 			.contact__form-container {
 				.contact__form-group {
 					margin-bottom: var(--mr-4);
@@ -675,6 +677,7 @@ html {
 					}
 
 					.contact__form-input {
+
 						width: 100%;
 						padding: 1rem;
 						font-size: 1.2rem;
